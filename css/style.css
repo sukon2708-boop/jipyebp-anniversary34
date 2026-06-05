@@ -1266,12 +1266,21 @@ a.btn-ghost, a.btn.secondary { color: #c4325a; }
   display: block;
 }
  
-.wheel-wrap {
+.wheel-wrap{
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  overflow: hidden;
+  max-width: 100%;
+  overflow: hidden;     /* กันล้น card */
+}
+
+/* canvas วงล้อ */
+#wheel{
+  width: 100%;
+  max-width: 360px;     /* 👈 พอดีมือถือ */
+  height: auto;
+  display: block;
 }
  
 /* ===============================
